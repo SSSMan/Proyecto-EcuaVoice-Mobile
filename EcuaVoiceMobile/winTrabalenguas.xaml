@@ -1,0 +1,356 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EcuaVoiceMobile.winTrabalenguas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape"  Orientation="Landscape"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Fondos/fondo siete-01.png"/>
+        </Grid.Background>
+        <!--Pivot Control-->
+        <phone:Pivot Title="">
+            <!--Pivot item one-->
+            <phone:PivotItem Header="Como">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbComo" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="136" Width="257" TextAlignment="Left" Text="Si yo como como como,&#xA;y tú comes como comes.&#xA;¿Cómo comes como como?&#xA;Si yo como como como." FontSize="20" DoubleTap="txbComo_DoubleTap"/>
+            </phone:PivotItem>
+
+            <!--Pivot item two-->
+            <phone:PivotItem Header="Cielo">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbCielo" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="173" Width="310" TextAlignment="Left" Text="El cielo está enladrillado&#xA;¿quién lo desenladrillará?,&#xA;el desenladrillador que lo desenladrille&#xA;buen desenladrillador será." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Tigres">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbTigres" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="120" Width="319" TextAlignment="Left" Text="Tres tristes tigres trigaban trigo,&#xA;tres tigres en un trigal.&#xA;¿Qué tigre trigaba más?&#xA;Los tres igual." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Pata - Peta">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPata" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="163" Width="328" TextAlignment="Left" Text="Pata, Peta, Pita y Pota,&#xA;cuatro patas, con un pato&#xA;y dos patas cada una.&#xA;Cuatro patas, cada pata&#xA;con dos patas y su pato.&#xA;Pota, Pita, Peta y Pata." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Cajones">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbCajones" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="70" Width="323" TextAlignment="Left" Text="Abrí cajones y cogí cordones,&#xA;cordones cogí y cajones abrí." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Pablito">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPablito" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="77" Width="301" TextAlignment="Left" Text="Pablito clavó un clavito.&#xA;¿Qué clavito clavó Pablito?" FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Pepe">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPepe" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="100" Width="349" TextAlignment="Left" Text="Pepe Pecas pica papas con un pico.&#xA;Con un pico pica papas Pepe Pecas." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Chacarita" Background="#FF993434" Opacity="0.2">
+                <TextBlock x:Name="txbChacarita" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="65" Width="259" TextAlignment="Left" Text="Chacarita Cucharita Cucaracha." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Trepa">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbTrepa" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="103" Width="284" TextAlignment="Left" Text="Trepa trepa la petrepa &#xA;cuando los petrepos&#xA;tepran trepa la petrepa." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Quiero">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbQuiero" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="116" Width="392" TextAlignment="Left" Text="Yo te quiero si tú me quieres &#xA;yo te quiero tú me quieres  si me quieres &#xA;yo te quiero mucho te quiero." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Coco">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbCoco" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="177" Width="361" TextAlignment="Left" Text="Compadre compre coco, &#xA;no compadre yo no compro coco, &#xA;porque como poco coco&#xA;como poco coco compro." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Caracatrepa">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbCaracatrepa" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="187" Width="298" TextAlignment="Left" Text="Había una caracatrepa &#xA;con tres caratrepitos&#xA;cuando la caracatrepa trepa&#xA;trepan los tres caratrepitos." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Volcán">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbVolcan" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="191" Width="392" TextAlignment="Left" Text="En un volcán de paranguacutirimicuaro lo quieren&#xA;desparanguacutirimicuarizar al qué yo&#xA;desparanguacutirimicuarisare será un buen &#xA;desparanguacutirimicuarisador." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Haja">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbHaja" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="155" Width="279" TextAlignment="Left" Text="Haja joja queja&#xA;loja mota loha coja&#xA;moja a loja mota queja." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Samba">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbSamba" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="139" Width="270" TextAlignment="Left" Text="Samba cutiri cutamba &#xA;navaquiri catacumba cutiri cuta." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Melchor">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbMelchor" HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="154" Width="304" TextAlignment="Left" Text="Melchor castañas comió, &#xA;Melchor castañas cenó, &#xA;y de tanto comer castañas se encastañó." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Turrones">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbTurrones" HorizontalAlignment="Left" Margin="10,17,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="168" Width="303" TextAlignment="Left" Text="Turrones comí,&#xA;turrones cené,&#xA;y de tanto comer turrones,&#xA;me enturroneceré." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Barrendero">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbBarrendero" HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="164" Width="291" TextAlignment="Left" Text="Barrendero que barrunta &#xA;muy serio por el sendero,&#xA;será un buen barruntador,&#xA;pero no un buen barrendero." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Perro">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPerro" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="173" Width="288" TextAlignment="Left" Text="Había un perro &#xA;debajo de un carro,&#xA;vino otro perro&#xA;y le mordió el rabo." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Erre">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbErre" HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="170" Width="302" TextAlignment="Left" Text="Erre con erre cigarra,  &#xA;erre con erre barril,&#xA;rápido corren los carros&#xA;por el ferrocarril." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Enredo">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbEnredo" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="160" Width="322" TextAlignment="Left" Text="Por desenredar el enredo  &#xA;que ayer enredé.&#xA;Hoy enredo el desenredo&#xA;que desenredé ayer." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="República">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbRepublica" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="172" Width="353" TextAlignment="Left" Text="Se avisa al público de la república &#xA;que el agua publica se acabará&#xA;que hará el público de la república&#xA;sin agua publica para tomar." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Paco">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPaco" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="167" Width="350" TextAlignment="Left" Text="Paco peco pico poco &#xA;fastidiaba como un loco&#xA;a su tío Federico hasta que este&#xA;le dijo poco a poco&#xA;paco peco pico poco." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Juncal">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbJuncal" HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="156" Width="302" TextAlignment="Left" Text="En el juncal de Junqueira &#xA;juntaba juncos Julián.&#xA;Juntóse Juan a juntarlos&#xA;y juntos juntaron más." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Cuando">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbCuando" HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="132" Width="308" TextAlignment="Left" Text="Cuando cuentes cuentos &#xA;cuenta cuantos cuentos cuentas." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Plancha">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPlancha" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="163" Width="322" TextAlignment="Left" Text="Si Pancha plancha &#xA;con cuatro planchas&#xA;¿Con cuántas planchas&#xA;Pancha plancha?" FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Palabra">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPalabra" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="124" Width="292" TextAlignment="Left" Text="Parangaricutirimicuaro." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Dicho">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbUnDicho" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="212" Width="298" TextAlignment="Left" Text="Me han dicho un dicho &#xA;que dicen que he dicho&#xA;yo ese dicho está mal&#xA;dicho pues si yo lo hubiera&#xA;dicho estaría mejor dicho&#xA;ese dicho que dicen que&#xA;algún día dije yo." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Chita">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbChita" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="160" Width="288" TextAlignment="Left" Text="Changa la chita, &#xA;chita la cahanga,&#xA;changa la chita,&#xA;chita la changa" FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Silba">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbSilba" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="192" Width="293" TextAlignment="Left" Text="¿Quién silba somo Silvia?, &#xA;nadie silba como Silvia, &#xA;porque Silvia silba bien, &#xA;si tu silbas como Silvia&#xA;silba a Silvia tu tambien." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Poquito">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPoquito" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="143" Width="282" TextAlignment="Left" Text="Poquito a poquito &#xA;paquito empaca copitos &#xA;en pocos paquetes." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Jaras">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbJaras" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="180" Width="402" TextAlignment="Left" Text="De guadalajara soy de guadalajara &#xA;vengo jaras traigo jaras vendo a cinco doy&#xA;cada jara hay que caray que carajada&#xA;que jaras tan caras vendo." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Barco">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbBarco" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="144" Width="303" TextAlignment="Left" Text="Tengo un barco camaronero, &#xA;Desencamaronamelo." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Tubo">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbTubo" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="190" Width="300" TextAlignment="Left" Text="María tuvo un tubo,&#xA;el tubo que tuvo se le rompió &#xA;y para recuperar el tubo que tuvo,&#xA;tuvo que comprar un tubo&#xA;igual al tubo que tuvo. " FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Dichos">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbEseDicho" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="211" Width="387" TextAlignment="Left" Text="Me han dicho que he dicho &#xA;un dicho pero ese dicho&#xA;no lo he dicho yo porque si &#xA;lo hubiera dicho ese dicho&#xA;estuviera bien dicho &#xA;por haberlo dicho yo" FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Picapiedra" Background="#FF993434" Opacity="0.2">
+                <TextBlock x:Name="txbPicapiedra" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="157" Width="336" TextAlignment="Left" Text="Pedro picapiedra, &#xA;piedra tras piedra con su pico, &#xA;pica, pobre pedro, poco a poco, &#xA;pica pica picapiedra" FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Polizador">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPolizador" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="164" Width="399" TextAlignment="Left" Text="El Arzobispo de constantinopla&#xA;se queria mandar desconstantinopolizar. &#xA;Cual quiera que lo descontatinopolizare&#xA;un buen descontantinopolizador será&#xA;y se le pagará muy bien la desconstantinopolización" FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Iza">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbIsa" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="149" Width="393" TextAlignment="Left" Text="Isa la petisa come muchas pizzas, &#xA;¿cuantas pizzas come isa la petiza &#xA;con su piel color de tiza?" FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Camarón">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbCamaron" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="132" Width="293" TextAlignment="Left" Text="Camarón caramelo &#xA;caramelo camarón." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Luna">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbLuna" HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="152" Width="398" TextAlignment="Left" Text="Al salir la luna salta a la laguna, &#xA;tras alguna nube se oculta la luna,&#xA;nubla la laguna se burla la luna &#xA;de la piel del agua de la fiel laguna." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Trabalenguar">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbTrabalenguar" HorizontalAlignment="Left" Margin="10,16,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="183" Width="416" TextAlignment="Left" Text="Un trabalenguiista creo un trabalengua &#xA;que ni el mejor trablenguista &#xA;podia trabalenguar." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Cama">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbComo2" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="141" Width="294" TextAlignment="Left" Text="Como cama coco &#xA;como coco cama." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Carroza">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbCarroza" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="197" Width="319" TextAlignment="Left" Text="Cuando yo como,&#xA;tú comes como Herodes, &#xA;muy mal y yo como Baltasar.&#xA;En la carroza de los Reyes caben todos menos tú.&#xA;Lo dice el niño Jesús." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Reyes">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbReyes" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="176" Width="271" TextAlignment="Left" Text="Tres Reyes Magos me traen &#xA;regalos todos los años,&#xA;mientras tragué tres riquísimos helados." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Rinco">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbRinco" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="147" Width="290" TextAlignment="Left" Text="Ornitorrinco, ornitorrinco,&#xA;atrévete y pega un brinco." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Cacahuetes">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbCacahuate" HorizontalAlignment="Left" Margin="10,14,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="178" Width="294" TextAlignment="Left" Text="Comí cacahuetes, me encacahueticé,&#xA;ahora para desencacahuetizarme,&#xA;¿Cómo me desencacahuetizaré?" FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Limas">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbLimas" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="220" Width="295" TextAlignment="Left" Text="Cuando comas lima  &#xA;cuenta cuantas limas &#xA;comes por que si no cuentas &#xA;cuantas limas comes no sabes &#xA;cuantas limas comerás" FontSize="20"/>
+            </phone:PivotItem>
+
+        </phone:Pivot>
+        <Button x:Name="btnparar" Content="Parar" HorizontalAlignment="Left" Margin="26,337,0,0" VerticalAlignment="Top" Width="171" Height="104" BorderBrush="{x:Null}" Click="btnparar_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Botones/m_seis-01-01.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+
+</phone:PhoneApplicationPage>

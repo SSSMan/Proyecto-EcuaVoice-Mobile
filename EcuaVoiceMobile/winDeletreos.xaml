@@ -1,0 +1,92 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EcuaVoiceMobile.winDeletreos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape"  Orientation="Landscape"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Fondos/fondo cinco-01.png"/>
+        </Grid.Background>
+        <!--Pivot Control-->
+        <phone:Pivot Title="Deletreos">
+            <!--Pivot item one-->
+            <phone:PivotItem Header="Letra">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.3"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer HorizontalAlignment="Left" Height="474" VerticalAlignment="Top" Width="728">
+                    <Grid Height="474" Width="728">
+                        <TextBox Name="txtLetra" HorizontalAlignment="Left" Height="81" Margin="10,10,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="672" Background="#FFEED0EA" Foreground="#FF9F3B2B" FontFamily="Arial" FontSize="38" FontWeight="Bold"/>
+                        <Button Name="btnLetra" Content="Deletrear" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.172,0.475" Click="btnLetra_Click" Width="170" Height="102" BorderBrush="{x:Null}">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Botones/m_uno-01-01.png"/>
+                            </Button.Background>
+                        </Button>
+                        <Button Name="btnBorraLetra" Content="Borrar" HorizontalAlignment="Left" Margin="180,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.172,0.475" Click="btnBorraLetra_Click" Width="170" Height="102" BorderBrush="{x:Null}">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Botones/m_seis-01-01.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+                </ScrollViewer>
+            </phone:PivotItem>
+
+            <!--Pivot item two-->
+            <phone:PivotItem Header="Silaba">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.3"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer HorizontalAlignment="Left" Height="474" VerticalAlignment="Top" Width="728" Margin="0,5,0,-5">
+                    <Grid Height="474" Width="728">
+                        <TextBox Name="txtSilaba" HorizontalAlignment="Left" Height="81" Margin="16,2,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="672" Background="#FFEED0EA" Foreground="#FF9F3B2B" FontSize="38" FontFamily="Arial" FontWeight="Bold"/>
+                        <Button Name="btnSilaba" Content="Deletrear" HorizontalAlignment="Left" Margin="15,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.172,0.475" Click="btnSilaba_Click" Width="170" Height="102" BorderBrush="{x:Null}">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Botones/m_uno-01-01.png"/>
+                            </Button.Background>
+                        </Button>
+                        <Button Name="btnBorraSilaba" Content="Borrar" HorizontalAlignment="Left" Margin="185,70,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.172,0.475" Click="btnBorraSilaba_Click" Width="170" Height="102" BorderBrush="{x:Null}">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Botones/m_seis-01-01.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+                </ScrollViewer>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Palabra">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.3"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer HorizontalAlignment="Left" Height="474" VerticalAlignment="Top" Width="728">
+                    <Grid Height="474" Width="728">
+                        <TextBox Name="txtPalabra" HorizontalAlignment="Left" Height="81" Margin="18,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="672" FontWeight="Bold" FontFamily="Arial" FontSize="38" Background="#FFEED0EA" Foreground="#FF9F3B2B"/>
+                        <Button Name="btnPalbra" Content="Deletrear" HorizontalAlignment="Left" Margin="18,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.172,0.475" Click="btnPalbra_Click" Width="170" Height="102" BorderBrush="{x:Null}">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Botones/m_uno-01-01.png"/>
+                            </Button.Background>
+                        </Button>
+                        <Button Name="btnBorraPalabra" Content="Borrar" HorizontalAlignment="Left" Margin="188,77,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.172,0.475" Click="btnBorraPalabra_Click" Width="170" Height="102" BorderBrush="{x:Null}">
+                            <Button.Background>
+                                <ImageBrush Stretch="Fill" ImageSource="Botones/m_seis-01-01.png"/>
+                            </Button.Background>
+                        </Button>
+                    </Grid>
+                </ScrollViewer>
+            </phone:PivotItem>
+
+        </phone:Pivot>
+        <MediaElement Name="medVoz" HorizontalAlignment="Left" Height="100" Margin="321,82,0,0" VerticalAlignment="Top" Width="100"/>
+    </Grid>
+
+</phone:PhoneApplicationPage>

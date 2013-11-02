@@ -1,0 +1,190 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EcuaVoiceMobile.winParesMinimos"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Fondos/fondo nueve-01.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="Pares Minimos" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <ScrollViewer HorizontalAlignment="Left" Height="658" Margin="10,0,0,-312" VerticalAlignment="Top" Width="694" >
+
+                <Grid Height="650" Width="638">
+                    <Grid.Background>
+                        <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                    </Grid.Background>
+                    <MediaElement x:Name="med1" HorizontalAlignment="Left" Height="51" Margin="10,354,0,0" VerticalAlignment="Top" Width="58"/>
+                    <ListBox Name="Lista1" HorizontalAlignment="Left" Height="539" Margin="54,35,0,0" VerticalAlignment="Top" Width="214" SelectionChanged="Lista1_SelectionChanged" IsSynchronizedWithCurrentItem="False" FontSize="26">
+                        <ListBox.Background>
+                            <SolidColorBrush Color="#FF2787C6" Opacity="0.9"/>
+                        </ListBox.Background>
+                        <ListBox.Items>
+                            <ListBoxItem Content="Misa"/>
+                            <ListBoxItem Content="Perro"/>
+                            <ListBoxItem Content="Casa"/>
+                            <ListBoxItem Content="Caza"/>
+                            <ListBoxItem Content="Pala"/>
+                            <ListBoxItem Content="Villa"/>
+                            <ListBoxItem Content="Foca"/>
+                            <ListBoxItem Content="Lata"/>
+                            <ListBoxItem Content="Callo"/>
+                            <ListBoxItem Content="Rio"/>
+                            <ListBoxItem Content="Calvo"/>
+                            <ListBoxItem Content="Día"/>
+                            <ListBoxItem Content="Beso"/>
+                            <ListBoxItem Content="Rata"/>
+                            <ListBoxItem Content="Oreja"/>
+                            <ListBoxItem Content="Vista"/>
+                            <ListBoxItem Content="Sal"/>
+                            <ListBoxItem Content="Sol"/>
+                            <ListBoxItem Content="Té"/>
+                            <ListBoxItem Content="Mar"/>
+                            <ListBoxItem Content="Capa"/>
+                            <ListBoxItem Content="Auto"/>
+                            <ListBoxItem Content="Vela"/>
+                            <ListBoxItem Content="Juego"/>
+                            <ListBoxItem Content="Pera"/>
+                            <ListBoxItem Content="Bello"/>
+                            <ListBoxItem Content="Barril"/>
+                            <ListBoxItem Content="Tren"/>
+                            <ListBoxItem Content="Comer"/>
+                            <ListBoxItem Content="Piña"/>
+                            <ListBoxItem Content="Sopa"/>
+                            <ListBoxItem Content="Uña"/>
+                            <ListBoxItem Content="Mantel"/>
+                            <ListBoxItem Content="Cena"/>
+                            <ListBoxItem Content="Faro"/>
+                            <ListBoxItem Content="Cubo"/>
+                            <ListBoxItem Content="Leña"/>
+                            <ListBoxItem Content="Mapa"/>
+                            <ListBoxItem Content="Grillo"/>
+                            <ListBoxItem Content="Brocha"/>
+                            <ListBoxItem Content="Beber"/>
+                            <ListBoxItem Content="Fila"/>
+                            <ListBoxItem Content="Claro"/>
+                            <ListBoxItem Content="Cama"/>
+                            <ListBoxItem Content="Olla"/>
+                            <ListBoxItem Content="Bata"/>
+                            <ListBoxItem Content="Camello"/>
+                            <ListBoxItem Content="Pelo"/>
+                            <ListBoxItem Content="Chino"/>
+                            <ListBoxItem Content="Sola"/>
+                            <ListBoxItem Content="Mesa"/>
+                            <ListBoxItem Content="Collar"/>
+                            <ListBoxItem Content="Tacho"/>
+                            <ListBoxItem Content="Techo"/>
+                            <ListBoxItem Content="Leche"/>
+                            <ListBoxItem Content="Banco"/>
+                            <ListBoxItem Content="Arto"/>
+                            <ListBoxItem Content="Chancho"/>
+                            <ListBoxItem Content="Loro"/>
+                            <ListBoxItem Content="Paco"/>
+                            <ListBoxItem Content="Lima"/>
+                            <ListBoxItem Content="Hijo"/>
+                            <ListBoxItem Content="Careta"/>
+                            <ListBoxItem Content="Mora"/>
+                            <ListBoxItem Content="León"/>
+                        </ListBox.Items>
+                    </ListBox>
+                    <ListBox x:Name="Lista2" HorizontalAlignment="Left" Height="539" Margin="330,35,0,0" VerticalAlignment="Top" Width="214" SelectionChanged="Lista2_SelectionChanged" IsSynchronizedWithCurrentItem="False" FontSize="26">
+                        <ListBox.Background>
+                            <SolidColorBrush Color="#FF41CB78" Opacity="0.9"/>
+                        </ListBox.Background>
+                        <ListBoxItem Content="Pisa"/>
+                        <ListBoxItem Content="Cerro"/>
+                        <ListBoxItem Content="Gasa"/>
+                        <ListBoxItem Content="Taza"/>
+                        <ListBoxItem Content="Bala"/>
+                        <ListBoxItem Content="Silla"/>
+                        <ListBoxItem Content="Boca"/>
+                        <ListBoxItem Content="Pata"/>
+                        <ListBoxItem Content="Gallo"/>
+                        <ListBoxItem Content="Tío"/>
+                        <ListBoxItem Content="Caldo"/>
+                        <ListBoxItem Content="Tía"/>
+                        <ListBoxItem Content="Peso"/>
+                        <ListBoxItem Content="Pata"/>
+                        <ListBoxItem Content="Oveja"/>
+                        <ListBoxItem Content="Pista"/>
+                        <ListBoxItem Content="Cal"/>
+                        <ListBoxItem Content="Gol"/>
+                        <ListBoxItem Content="Ve"/>
+                        <ListBoxItem Content="Mal"/>
+                        <ListBoxItem Content="Tapa"/>
+                        <ListBoxItem Content="Alto"/>
+                        <ListBoxItem Content="Pela"/>
+                        <ListBoxItem Content="Fuego"/>
+                        <ListBoxItem Content="Perra"/>
+                        <ListBoxItem Content="Sello"/>
+                        <ListBoxItem Content="Carril"/>
+                        <ListBoxItem Content="Tres"/>
+                        <ListBoxItem Content="Correr"/>
+                        <ListBoxItem Content="Niña"/>
+                        <ListBoxItem Content="Copa"/>
+                        <ListBoxItem Content="Una"/>
+                        <ListBoxItem Content="Pastel"/>
+                        <ListBoxItem Content="Pena"/>
+                        <ListBoxItem Content="Paro"/>
+                        <ListBoxItem Content="Tubo"/>
+                        <ListBoxItem Content="Peña"/>
+                        <ListBoxItem Content="Nata"/>
+                        <ListBoxItem Content="Brillo"/>
+                        <ListBoxItem Content="Brota"/>
+                        <ListBoxItem Content="Deber"/>
+                        <ListBoxItem Content="Pila"/>
+                        <ListBoxItem Content="Clavo"/>
+                        <ListBoxItem Content="Dama"/>
+                        <ListBoxItem Content="Oca"/>
+                        <ListBoxItem Content="Gata"/>
+                        <ListBoxItem Content="Cabello"/>
+                        <ListBoxItem Content="Velo"/>
+                        <ListBoxItem Content="Chilo"/>
+                        <ListBoxItem Content="Hola"/>
+                        <ListBoxItem Content="Pesa"/>
+                        <ListBoxItem Content="Llorar"/>
+                        <ListBoxItem Content="Cacho"/>
+                        <ListBoxItem Content="Pecho"/>
+                        <ListBoxItem Content="Meche"/>
+                        <ListBoxItem Content="Barco"/>
+                        <ListBoxItem Content="Harto"/>
+                        <ListBoxItem Content="Pancho"/>
+                        <ListBoxItem Content="Oro"/>
+                        <ListBoxItem Content="Taco"/>
+                        <ListBoxItem Content="Cima"/>
+                        <ListBoxItem Content="Higo"/>
+                        <ListBoxItem Content="Carreta"/>
+                        <ListBoxItem Content="Dora"/>
+                        <ListBoxItem Content="Peón"/>
+
+                    </ListBox>
+
+
+                </Grid>
+            </ScrollViewer>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

@@ -1,0 +1,56 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EcuaVoiceMobile.winLector"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape" Orientation="Landscape"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Fondos/fondo nueve-01.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="EcuaVoice Mobile" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="Lector" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.Background>
+                <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+            </Grid.Background>
+            <ScrollViewer HorizontalAlignment="Left" Height="625" Margin="156,0,0,-306" VerticalAlignment="Top" Width="525" >
+                <TextBox Height="1200"  VerticalAlignment="Stretch"  Width="495"  Name="txtparrafo" TextWrapping="Wrap" AcceptsReturn="True" Background="White" FontSize="38" Foreground="#FF020223" FontFamily="Arial" FontWeight="Bold"/>
+                <!--<TextBox />-->
+
+            </ScrollViewer>
+            <MediaElement x:Name="med1" HorizontalAlignment="Left" Height="51" Margin="222,-95,0,0" VerticalAlignment="Top" Width="58"/>
+            <Button  Name="btnLeer" Content="Leer" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top" Width="170" Click="btnLeer_Click" Height="102" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Botones/m_cuatro-01-01.png"/>
+                </Button.Background>
+            </Button>
+            <Button x:Name="btnparar" Content="Parar" HorizontalAlignment="Left" Margin="9,87,0,0" VerticalAlignment="Top" Width="171" Height="104" BorderBrush="{x:Null}" Click="btnparar_Click">
+                <Button.Background>
+                    <ImageBrush Stretch="Fill" ImageSource="Botones/m_seis-01-01.png"/>
+                </Button.Background>
+            </Button>
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

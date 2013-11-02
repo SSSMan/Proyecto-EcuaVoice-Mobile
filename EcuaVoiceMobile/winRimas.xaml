@@ -1,0 +1,124 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="EcuaVoiceMobile.winRimas"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Landscape"  Orientation="Landscape"
+    shell:SystemTray.IsVisible="True">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot">
+        <Grid.Background>
+            <ImageBrush Stretch="Fill" ImageSource="Fondos/fondo uno-01.png"/>
+        </Grid.Background>
+        <!--Pivot Control-->
+        <phone:Pivot >
+            <!--Pivot item one-->
+            <phone:PivotItem Header="El Gato">
+                <ScrollViewer Height="1024">
+                    <ScrollViewer.Background>
+                        <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                    </ScrollViewer.Background>
+                    <TextBlock x:Name="txbGato" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="1024" Width="292" TextAlignment="Left" Text="El gato sin botas&#xA;de puro goloso&#xA;amaneció enfermo&#xA;de un mal doloroso.&#xA;&#xA;La gata afligida&#xA;no duda el motivo&#xA;de alguna comida&#xA;o de un salto furtivo.&#xA;&#xA;El gato asustado&#xA;confiesa su culpa&#xA;devoró confiado." FontSize="20" DoubleTap="txbGato_DoubleTap"/>
+                </ScrollViewer>
+            </phone:PivotItem>
+
+            <!--Pivot item two-->
+            <phone:PivotItem Header="Los meses">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbMeses" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="138" Width="292" TextAlignment="Left" Text="Treinta días trae septiembre&#xA;Con abril junio y noviembre&#xA;De veintiocho sólo hay uno&#xA;Y los demás treinta y uno" FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Caballito Blanco">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer>
+                    <TextBlock x:Name="txbCaballitoBlanco" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="221" Width="292" TextAlignment="Left" FontSize="20" Text="Caballito blanco&#xA;llévame de aquí&#xA;llévame a la tierra&#xA;donde yo nací.&#xA;&#xA;Caballito blanco&#xA;dime la verdad&#xA;yo te la diré&#xA;si vienes aquí." />
+                </ScrollViewer>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Tengo">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer Height="235">
+                    <TextBlock x:Name="txbTengo" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="235" Width="292" TextAlignment="Left" Text="Tengo tengo tengo&#xA;tú no tienes nada&#xA;tengo tres ovejas&#xA;en una cabaña&#xA;&#xA;&#xA;Una me da leche&#xA;otra me da lana&#xA;otra me mantiene&#xA;toda la semana." FontSize="20"/>
+                </ScrollViewer>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Corona">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer>
+                    <TextBlock x:Name="txbQueLlueva" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="176" Width="292" TextAlignment="Left" Text="Que llueva, que llueva&#xA;La virgen de la cueva&#xA;Los pajaritos cantan&#xA;La madre se levanta&#xA;Que sí&#xA;Que no&#xA;Que caiga un chaparrón" FontSize="20"/>
+                </ScrollViewer>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="La viejita">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer>
+                    <TextBlock x:Name="txbViejita" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="337" Width="292" TextAlignment="Left"  Text="Esta era una viejita&#xA;sin nadita que comer&#xA;sino carnes frutas dulces&#xA;tortas huevos pan y pez.&#xA;&#xA;Siempre tuvo chocolate&#xA;leche vino té y café&#xA;y la pobre no encontraba&#xA;qué comer y qué beber.&#xA;&#xA;Se murió de mal de arrugas&#xA;más encorvada que un seis&#xA;y jamás volvió a quejarse&#xA;ni de hambre ni de sed." FontSize="20"/>
+                </ScrollViewer>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="La Torta">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbTorta" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="101" Width="292" TextAlignment="Left" Text="Qué te importa&#xA;cara de torta&#xA;cuchillito que no corta&#xA;pico largo y nariz corta." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Gallo Pilon">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer>
+                    <TextBlock x:Name="txbGalloPilon" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="210" Width="292" TextAlignment="Left" Text="A la lata&#xA;Al latero&#xA;A la hija del chocolatero&#xA;A la pin, a la pon,&#xA;A la hija del gallo pilón&#xA;&#xA;A la í&#xA;A la o&#xA;A la hija del gallo piló." FontSize="20"/>
+                </ScrollViewer>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Paloma">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <TextBlock x:Name="txbPaloma" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="111" Width="292" TextAlignment="Left" Text="Paloma bumbuna&#xA;llevame a tu cuna&#xA;dame de comer&#xA;semilla de tuna." FontSize="20"/>
+            </phone:PivotItem>
+
+            <phone:PivotItem Header="Cigueña">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer>
+                    <TextBlock x:Name="txbCigueña" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="179" Width="292" TextAlignment="Left" Text="Cigüeña bareña&#xA;La casa se quema&#xA;Los hijos se van&#xA;Por la calle pequeña&#xA;Del niño San Juan&#xA;Grítale, grítale&#xA;Que ya volverán." FontSize="20"/>
+                </ScrollViewer>
+            </phone:PivotItem>
+            <phone:PivotItem Header="La gallinita">
+                <phone:PivotItem.Background>
+                    <SolidColorBrush Color="#FF993434" Opacity="0.2"/>
+                </phone:PivotItem.Background>
+                <ScrollViewer>
+                    <TextBlock x:Name="txbGallinita" HorizontalAlignment="Left" Margin="10,15,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="224" Width="292" TextAlignment="Left" Text="Con una corona&#xA;plateada y bordada&#xA;llegó mi vecina&#xA;la buena gallina.&#xA;&#xA;&#xA;Puso un huevito&#xA;y muy pronto nació&#xA;su hijo el pollito&#xA;¡y rápido creció!" FontSize="20"/>
+                </ScrollViewer>
+            </phone:PivotItem>
+        </phone:Pivot>
+        <Button x:Name="btnparar" Content="Parar" HorizontalAlignment="Left" Margin="254,143,0,0" VerticalAlignment="Top" Width="171" Height="104" BorderBrush="{x:Null}" Click="btnparar_Click">
+            <Button.Background>
+                <ImageBrush Stretch="Fill" ImageSource="Botones/m_seis-01-01.png"/>
+            </Button.Background>
+        </Button>
+    </Grid>
+
+</phone:PhoneApplicationPage>
